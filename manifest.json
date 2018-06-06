@@ -1,0 +1,17 @@
+{
+  "description": "Blocks advertisers on mobile.twitter.com",
+  "manifest_version": 2,
+  "name": "Ad Blocker for Twitter",
+  "version": "1.0",
+  "homepage_url": "https://ash.ms/",
+  "icons": {
+    "48": "icons/icon.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://mobile.twitter.com/*"],
+      "js": ["mobile.js"]
+    }
+  ]
+}
