@@ -44,6 +44,7 @@ function checkAds() {
       document.querySelectorAll("[role=menuitem]")
     ).find(btn => btn.textContent.match(/^Block @/));
     if (!blockButton) return console.log("couldn't find block button");
+    console.log(blockButton.textContent);
     blockButton.click();
     setTimeout(function() {
       const yesButton = Array.from(
