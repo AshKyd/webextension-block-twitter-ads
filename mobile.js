@@ -28,7 +28,7 @@ function checkAds() {
       console.log("couldnt", path);
       return null;
     }
-  });
+  }).filter(Boolean);
 
   if (!ads.length) {
     console.log("No ads found");
